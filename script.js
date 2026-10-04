@@ -201,7 +201,7 @@
     const body = encodeURIComponent(
       `${fr ? "Nom" : "Name"}: ${d.name}\nEmail: ${d.email}\n${fr ? "Entreprise" : "Company"}: ${d.company}\n${fr ? "Agents" : "Agents"}: ${d.agents}\n\n${d.message}`
     );
-    location.href = `mailto:hello@getticketless.com?subject=${subject}&body=${body}`;
+    location.href = `mailto:contact@getticketless.com?subject=${subject}&body=${body}`;
     msg.style.color = "var(--emerald-600)";
     msg.textContent = fr ? "Merci ! Votre client e-mail va s'ouvrir. Réponse sous 24h." : "Thanks! Your email client will open. We reply within 24h.";
     form.reset();
